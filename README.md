@@ -3,6 +3,11 @@
 This is a simple public API that returns my basic information.
 i.e. my **email address**, the **github URL** of this project, and the current **date and time** (UCT).
 
+## Table of Content
+* [Setup](#setup)
+* [API](#api)
+* [Links](#links)
+
 ## Setup
 
 #### Install dependencies:
@@ -50,5 +55,5 @@ i.e. my **email address**, the **github URL** of this project, and the current *
 }
 ```
 
-# Links
+## Links
 * [HNG Python Developers](https://hng.tech/hire/python-developers)
