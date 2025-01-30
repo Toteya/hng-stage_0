@@ -4,7 +4,7 @@ module app:
 Flask public API
 """
 from api.v1 import app_bp
-from datetime import datetime
+from datetime import datetime, timezone
 from flask import jsonify
 
 
@@ -14,12 +14,13 @@ def info():
     Registered email address; Current date and time; Github URL
     """
     email = 'twkamanja@gmail.com'
-    current_dt = datetime.now()
-    github_url = 'https://github.com/Toteya/hng-stage_0.git'
-    
+    current_dt = datetime.now(timezone.utc)
+    github_url = 'https://github.com/Toteya/hng-stage_0'
+
     information = {
         "email": email,
-        "current_datetime": current_dt.isoformat(timespec='seconds'),
+        "current_datetime": current_dt.isoformat(timespec='seconds')
+                                .replace("+00:00", "Z"),
         "github_url": github_url
     }
 
