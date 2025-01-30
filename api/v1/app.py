@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """
 module app:
-Flask public API
+Flask Basic Information Public API
 """
 from api.v1 import app_bp
-from datetime import datetime
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
 
 app = Flask(__name__)
 app.register_blueprint(app_bp)
 cors = CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
-
 
 if __name__ == '__main__':
     host = '0.0.0.0'
