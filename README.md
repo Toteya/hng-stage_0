@@ -49,3 +49,6 @@ i.e. my **email address**, the **github URL** of this project, and the current *
    "github_url" : "https://github.com/Toteya/hng-stage_0"
 }
 ```
+
+# Links
+* [HNG Python Developers](https://hng.tech/hire/python-developers)
